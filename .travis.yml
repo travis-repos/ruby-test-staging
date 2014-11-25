@@ -31,13 +31,10 @@ env:
 - MATRIX_EXPLOSION=28
 - MATRIX_EXPLOSION=29
 - MATRIX_EXPLOSION=30
-rvm:
-- 1.9.3
-- 2.1.3
-- jruby-19mode
+rvm: 2.1.3
 before_script:
 - curl -sL "http://www.coker.com.au/bonnie++/bonnie++-1.03e.tgz" | tar xzf -
 - cd bonnie++-1.03e && ./configure --prefix=$HOME && make && make install
 script:
 - bundle exec rspec
-- ~/sbin/bonnie++ -s 512:256 -r 256
+- ~/sbin/bonnie++ -s 1024:256 -r 512
