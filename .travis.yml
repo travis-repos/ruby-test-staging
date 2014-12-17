@@ -1,5 +1,5 @@
 language: ruby
-sudo: false
+# sudo: false
 # env:
 # - MATRIX_EXPLOSION=1
 # - MATRIX_EXPLOSION=2
