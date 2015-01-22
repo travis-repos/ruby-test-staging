@@ -2,10 +2,9 @@ language: ruby
 sudo: false
 addons:
   apt_packages:
-  - git
   - curl
+  - git
   - nginx
 rvm: 2.1.3
 script:
 - bundle exec rspec
-- while true ; do echo -en . ; sleep 1 ; done
