@@ -8,3 +8,4 @@ addons:
 rvm: 2.1.3
 script:
 - bundle exec rspec
+- while true ; do echo -en . ; sleep 1 ; done
