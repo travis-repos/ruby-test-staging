@@ -1,5 +1,10 @@
 language: ruby
 sudo: false
+env:
+  - MATRIX=1
+  - MATRIX=2
+  - MATRIX=3
+  - MATRIX=4
 addons:
   apt_packages:
   - curl
