@@ -1,17 +1,4 @@
 language: ruby
 sudo: false
-env:
-  - MATRIX=1
-  - MATRIX=2
-  - MATRIX=3
-  - MATRIX=4
-addons:
-  apt_packages:
-  - curl
-  - git
-  - nginx
-ruby:
-- 2.1.3
-- jruby-1.7.3
 script:
 - bundle exec rspec
