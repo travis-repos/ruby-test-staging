@@ -3,4 +3,7 @@ sudo: false
 env:
   global:
   - rvm_debug=1
+  - RVM_WAT="$(rvm debug use . --install --binary --fuzzy >> rvm-use.log 2>&1)"
+  - WAT="$(cat rvm-use.log >> /dev/stdout)"
+  - FOO="$(sudo cat /etc/hosts)"
 script: bundle exec rspec
