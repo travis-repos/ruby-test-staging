@@ -5,12 +5,14 @@ sudo: false
 env:
   - WELLINGTON=AWESOME
   - NEWZEALAND=THEBEST
+  - ORIENTALBAY=AMUSTSWIM
 
 rvm:
   - 2.2
   - 2.1
   - 2.0.0
   - 1.9.3
+  - jruby
 
 script:
   - rvm debug use . --install --binary --fuzzy 2>&1 | tee -a rvm-use.log
