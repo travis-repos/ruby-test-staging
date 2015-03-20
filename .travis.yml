@@ -1,19 +1,7 @@
 language: ruby
 
 sudo: false
-
-env:
-  - WELLINGTON=AWESOME
-  - NEWZEALAND=THE_BEST
-  - ORIENTALBAY=A_MUST_SWIM
-  - FLIGHTCOFFEE=ITS_ALL_ABOUT_THE_SUMMER_BROWNS
-
-rvm:
-  - 2.2
-  - 2.1
-  - 2.0.0
-  - 1.9.3
-  - jruby
+rvm: 2.2
 
 script:
   - rvm debug use . --install --binary --fuzzy 2>&1 | tee -a rvm-use.log
