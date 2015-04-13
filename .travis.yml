@@ -17,6 +17,3 @@ install: echo install
 script:
 - echo script
 - test $ZERO -eq 0
-
-after_script:
-- cat ~/.transifexrc
