@@ -3,6 +3,10 @@ language: ruby
 sudo: false
 rvm: 2.2
 
+env:
+- ZERO=0
+- ZERO=1
+
 addons:
   transifex:
     username: somebody
@@ -10,7 +14,9 @@ addons:
     hostname: https://www.custom-hostname.example.com
 
 install: echo install
-script: echo script
+script:
+- echo script
+- test $ZERO -eq 0
 
 after_script:
 - cat ~/.transifexrc
