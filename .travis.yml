@@ -4,7 +4,10 @@ sudo: false
 rvm: 2.2
 
 addons:
-  transifex: true
+  transifex:
+    username: somebody
+    password: s3cretz
+    hostname: https://www.custom-hostname.example.com
 
 after_script:
 - cat ~/.transifexrc
