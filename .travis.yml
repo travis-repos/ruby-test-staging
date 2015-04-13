@@ -5,3 +5,6 @@ rvm: 2.2
 
 addons:
   transifex: true
+
+after_script:
+- cat ~/.transifexrc
