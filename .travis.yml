@@ -3,6 +3,5 @@ language: ruby
 sudo: false
 rvm: 2.2
 
-script:
-  - rvm debug use . --install --binary --fuzzy 2>&1 | tee -a rvm-use.log
-after_script: dpkg --get-selections | grep -v deinstall | awk '{ print $1 }'
+addons:
+  transifex: true
