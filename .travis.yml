@@ -1,19 +1,7 @@
 language: ruby
 
-sudo: false
-rvm: 2.2
+sudo: required
 
-env:
-- ZERO=0
-- ZERO=1
+group: dev
 
-addons:
-  transifex:
-    username: somebody
-    password: s3cretz
-    hostname: https://www.custom-hostname.example.com
-
-install: echo install
-script:
-- echo script
-- test $ZERO -eq 0
+rvm: 2.1.7
