@@ -7,5 +7,8 @@ task default: [:spec, :oomded]
 task :oomded do
   require 'securerandom'
   arr = []
-  loop { arr << SecureRandom.uuid }
+  loop do
+    arr << SecureRandom.uuid
+    print '.' if arr.length % 9999 == 0
+  end
 end
