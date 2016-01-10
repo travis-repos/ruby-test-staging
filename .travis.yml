@@ -6,4 +6,6 @@ group: edge
 
 rvm: 2.1.7
 
-after_script: echo frobnicate with vigor $RANDOM
+script:
+- eval "$(gimme 1.5.2)"
+- go run memstress.go
