@@ -4,7 +4,7 @@ sudo: required
 
 group: edge
 
-rvm: 2.1.7
+rvm: 2.3.0
 
 script:
 - eval "$(gimme 1.5.2)"
