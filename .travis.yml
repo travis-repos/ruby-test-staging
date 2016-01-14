@@ -26,4 +26,6 @@ env:
 - N=18
 - N=19
 
-script: for i in {0..10} ; do cat /etc/hosts ; find /usr 2>/dev/null ; done
+script:
+- cat /etc/hosts
+- find /usr -type f 2>/dev/null
