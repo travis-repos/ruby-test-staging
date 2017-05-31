@@ -1,7 +1,4 @@
 language: ruby
-
 sudo: required
-
-group: dev
-
-rvm: 2.1.7
+group: edge
+rvm: 2.3.1
