@@ -1,15 +1,13 @@
-language: ruby
+language: __connie__
 sudo: required
 dist: trusty
-rvm: 2.3.1
-env:
-- WAT=0
-- WAT=1
-- WAT=2
-- WAT=3
-- WAT=4
-- WAT=5
-- WAT=6
-- WAT=7
-- WAT=8
-- WAT=9
+group: stable
+script:
+- curl -sSLO https://raw.githubusercontent.com/travis-ci/packer-templates/master/packer-scripts/dump-dpkg-manifest
+- chmod +x dump-dpkg-manifest
+- sudo ./dump-dpkg-manifest | tee dpkg-manifest.json
+matrix:
+  include:
+  - language: __garnet__
+  - language: __amethyst__
+  - language: __sugilite__
