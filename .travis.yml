@@ -1,15 +1,10 @@
 language: ruby
-sudo: required
+sudo: false
 dist: trusty
-rvm: 2.3.1
-env:
-- WAT=0
-- WAT=1
-- WAT=2
-- WAT=3
-- WAT=4
-- WAT=5
-- WAT=6
-- WAT=7
-- WAT=8
-- WAT=9
+
+addons:
+  apt:
+    sources:
+    - google-chrome
+    packages:
+    - google-chrome-stable
